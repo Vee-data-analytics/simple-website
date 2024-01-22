@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>My Website</h1>
+        <h2>time and date<h2>
+        <button>refresh time and date</button>
+        <script>
+            document.querySelector("h2").innerHTML = new Date();
+       document.querySelector("button").addEventListener("click",function(){
+        location.reload("h2");});
+        </script>
+    </body>
+    </html>
